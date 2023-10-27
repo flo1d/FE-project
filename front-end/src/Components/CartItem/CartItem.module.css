@@ -1,0 +1,125 @@
+.cart__item {
+    display: flex;
+    max-width: 824px;
+    min-height: 247px;
+    border-top: 1px solid #a7a7a7;
+    padding: 40px 0;
+    position: relative;
+    animation: slide-in 0.6s ease forwards;
+    transform: translateX(-100%);
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .cart__item:last-child {
+    border-bottom: 1px solid #a7a7a7;
+  }
+  .img__wrapper {
+    width: 192px;
+    height: 166px;
+    padding-right: 30px;
+  }
+  .item__img {
+    border-radius: 18px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .title__counter__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 15px 2px 0;
+    max-width: 318px;
+    width: 100%;
+    margin-right: 25px;
+  }
+  .item__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #3a3a3a;
+  }
+  .counter__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 140px;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    user-select: none;
+  }
+  .counter__decr {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .counter__decr:hover,
+  .counter__incr:hover {
+    color: #339933;
+    border: 1px solid #339933;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px inset;
+  }
+  .counter__decr:active,
+  .counter__incr:active {
+    color: white;
+    background-color: #339933;
+  }
+  .counter__count {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+  .counter__incr {
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .close__mark {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .close__mark:hover {
+    color: #ff32a1;
+  }
+  .close__mark:active {
+    color: #ffacd8;
+  }
+  
+  @media (max-width: 548px) {
+    .cart__item {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .img__wrapper {
+      padding-right: 0;
+    }
+    .item__img {
+      object-fit: cover;
+    }
+    .title__counter__wrapper {
+      align-items: center;
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .item__title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+  

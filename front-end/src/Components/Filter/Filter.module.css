@@ -1,0 +1,99 @@
+.filter__wrapper {
+    padding-bottom: 34px;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter__label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-right: 40px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .filter__label__price {
+    gap: 15px;
+  }
+  .filter__label__discount{
+    margin-right: 91px;
+    gap: 39px;
+  }
+  .filter__label__sort {
+    margin-right: 0;
+    gap: 42px;
+  }
+  .filter__select {
+    width: 219px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    outline: none;
+    padding: 9px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #797979;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .filter__select:focus {
+    box-shadow: 0 0 3px #339933 inset;
+    border-color: #339933;
+  }
+  
+  @media (max-width: 1057px) {
+    .form {
+      flex-direction: column;
+      align-items: unset;
+      gap: 20px;
+    }
+    .filter__label {
+      font-size: 26px;
+    }
+    .filter__label__price {
+      gap: 38px;
+    }
+    .filter__label__discount {
+      gap: 65px;
+    }
+    .filter__wrapper {
+      padding-bottom: 46px;
+    }
+  }
+  
+  @media (max-width: 1056px) {
+    .form {
+      align-items: center;
+    }
+    .filter__label__discount {
+      margin-right: 0;
+    }
+    .filter__label {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 405px) {
+    .filter__label {
+      font-size: 20px;
+      gap: 20px;
+    }
+  
+    .filter__label__discount {
+      display: flex;
+      justify-content: space-between;
+      width: 311px;
+    }
+    .filter__label__price {
+      display: flex;
+      justify-content: space-between;
+      width: 311px;
+    }
+  }
+  

@@ -1,0 +1,145 @@
+.footer {
+    min-height: 900px;
+    padding-bottom: 38px;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 47px;
+  }
+  .contacts__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    padding-bottom: 25px;
+  }
+  
+  .contacts__number {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 130%;
+    padding-bottom: 33px;
+  }
+  .contacts__icons {
+    display: flex;
+    gap: 68px;
+  }
+  .contacts__icon__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .contacts__icon__item {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .contacts__icon__item:hover path {
+    fill: #a8226a;
+  }
+  .whatsapp__icon:hover path {
+    fill: #1f6d1f;
+  }
+  .icon__item__text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+  }
+  
+  .address__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    padding-bottom: 25px;
+  }
+  
+  .address {
+    max-width: 564px;
+    padding-bottom: 20px;
+  }
+  .address a {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+  }
+  .address a:link {
+    color: black;
+  }
+  .address a:visited {
+    color: #3a3a3a;
+  }
+  .address a:hover {
+    color: #339933;
+  }
+  .address a:active {
+    color: rgb(12, 12, 173);
+  }
+  
+  .address__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    padding-bottom: 2px;
+  }
+  .address__subtitle__hours {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  
+  @media (max-width: 1292px) {
+    .footer__wrapper {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 1026px) {
+    .footer__contacts {
+      padding-left: 60px;
+    }
+  }
+  @media (max-width: 903px) {
+    .footer__wrapper {
+      gap: 70px;
+    }
+    .contacts__number {
+      font-size: 40px;
+    }
+    .footer__contacts {
+      padding-left: 45px;
+    }
+  }
+  @media (max-width: 736px) {
+    .footer__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer__contacts,
+    .footer__address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+    .contacts__number {
+      font-size: 40px;
+    }
+    .address {
+      text-align: center;
+    }
+  }
+  @media (max-width: 400px) {
+    .contacts__number {
+      font-size: 30px;
+    }
+    .address a {
+      font-size: 30px;
+    }
+    .address {
+      padding-bottom: 50px;
+    }
+  }
+  

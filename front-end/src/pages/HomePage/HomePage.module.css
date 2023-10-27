@@ -1,0 +1,21 @@
+.categories__texts__btn {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    padding-bottom: 20px;
+  }
+  .categories__section__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+  
+  @media (max-width: 1033.5px) {
+    .categories__texts__btn {
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 50px;
+    }
+  }
+  
